@@ -1,0 +1,130 @@
+Python. HW_1
+
+1) Создать переменную типа String
+str = "Hello world!"
+print(str)
+Hello world!
+print(str[0]) #напечатать первый символ строки
+H
+print(str[2:5]) #напечатать символы с третьего по пятый
+llo
+print(str[2:]) #напечатать символы с третьего до конца строки
+llo world!
+print(str*2) #напечатать строку два раза
+Hello world!Hello world!
+print(str+"TEST") #напечатать конкатенирующую (объединенную) строку
+Hello world!TEST
+2) Создать переменную типа Integer
+age = 35 #переменная типа int (целое число)
+print(age)
+35
+3) Создать переменную типа Float
+normal_body_temp = 36.6
+print(normal_body_temp) #переменная типа float
+36.6
+4) Создать переменную типа Bytes
+blist = [1, 2, 3, 255] #список с именем blist
+the_bytes = bytes (blist) #переменная типа bytes с именем the_bytes
+print(the_bytes)
+b'\x01\x02\x03\xff'
+5) Создать переменную типа List
+list_datatypes = ["Python", 19, 3.14, "tiger", 35]
+print(list_datatypes)
+['Python', 19, 3.14, 'tiger', 35]
+print(list_datatypes[0]) #вывести первый элемент списка
+Python
+print(list_datatypes[1:3]) #вывести элементы списка, начиная со второго и заканчивая третьим
+[19, 3.14]
+print(list_datatypes[2:]) #вывести элементы списка, начиная со второго и до конца
+[3.14, 'tiger', 35]
+tinylist = ["sasha", 35] #новый список
+print(tinylist*2) #вывести все элементы списка два раза
+['sasha', 35, 'sasha', 35]
+print(list_datatypes+tinylist) #вывести объединенные списки
+['Python', 19, 3.14, 'tiger', 35, 'sasha', 35]
+print(list_datatypes[-1]) #получение последнего элемента списка
+35
+6) Создать переменную типа Tuple
+tuple = ("Python", 19, 3.14, "tiger", 35)
+print(tuple) 
+print(tuple[0]) #вывести первый элемент кортежа
+Python
+print(tuple[1:3]) #вывести второй и третий элементы
+(19, 3.14)
+print(tuple[2:]) #вывести все элементы, начиная с третьего
+(3.14, 'tiger', 35)
+tinytuple = ("sasha", 35) # новый кортеж
+print(tinytuple*2) #вывести все элементы два раза
+('sasha', 35, 'sasha', 35)
+print(tuple[1:3]*2) #вывести второй и третий элементы два раза
+(19, 3.14, 19, 3.14)
+print(tuple+tinytuple) #вывести объединенные элементы кортежей
+('Python', 19, 3.14, 'tiger', 35, 'sasha', 35)
+print(tuple[-1]) #вывести последний элемент кортежа
+35
+7) Создать переменную типа Set
+set()
+print(set()) #создание пустых множеств
+set()
+x = set([1,2,3,4,5,6,7,8,9])
+print(x)
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
+x = "блаблабла"
+print(set(x)) #преобразование str во множество
+{'л', 'б', 'а'}
+x = ("apple", "banana", "cherry")
+print(set(x)) #преобразование tuple во множество
+{'banana', 'cherry', 'apple'}
+x = ["apple", "banana", "cherry"]
+print(set(x)) #преобразование list во множество
+{'banana', 'cherry', 'apple'}
+8) Создать переменную типа Frozen set
+frozenset()
+print(frozenset()) #создание пустых множеств
+frozenset()
+x = frozenset("мама мыла раму")
+print(x)
+frozenset({'л', ' ', 'у', 'м', 'а', 'ы', 'р'})
+9) Создать переменную типа Dict
+dict_ages = {"Сергей":37,"Саша":35,"Егор":19}
+print(dict_ages) #вывести полное содержимое словаря
+{'Сергей': 37, 'Саша': 35, 'Егор': 19}
+print(dict_ages.keys()) #вывести все ключи словаря
+dict_keys(['Сергей', 'Саша', 'Егор'])
+print(dict_ages.values()) #вывести все значения в словаре
+dict_values([37, 35, 19])
+10) Вывести в консоль все выше перечисленные переменные с добавлением типа данных.
+	10.1 highlight the filename.py and press the button "Run"
+	10.1 go to the terminal tab and type <python filename.py>
+11) Создать 2 переменные String, создать переменную в которой суммируете эти переменные. Вывести в консоль.
+str1 = "Py"
+str2 = "thon"
+str3 = str1+str2
+print(str3)
+Python
+12) Создать 2 переменные Integer, создать переменную в которой суммируете эти переменные. Вывести в консоль.
+int1 = 100
+int2 = 50
+int3 = int1+int2
+print(int3)
+150
+13) Создать переменную в которой Разделите эти переменные Int. Вывести в консоль.
+int4 = int1/int2
+print(int4)
+2.0
+int4 = int1//int2
+print(int4)
+2
+14) Создать переменную в которой Умножите эти переменные Int. Вывести в консоль.
+int5 = int1*int2
+print(int5)
+5000
+15) Создать переменную в которой Разделите без остатка эти переменные Int. Вывести в консоль.
+int6 = int1%int2
+print(int6)
+0
+16) Создать переменную в которой надо присвоить остаток от деления этих переменные Int. Вывести в консоль.
+int7 = 5
+int7 %=3
+print(int7)
+2
