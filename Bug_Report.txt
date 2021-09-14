@@ -1,0 +1,15 @@
+Bug_Report
+
+Bug ID
+Bug title
+Build number
+Severity
+Priority
+Assigned to
+Reported by
+Status
+Environment
+Steps to reproduce
+Actual result
+Expected result
+Attachment
